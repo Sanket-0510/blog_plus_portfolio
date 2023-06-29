@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./home.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-logo">
+        <img
+          src="https://w7.pngwing.com/pngs/352/708/png-transparent-logo-s-miscellaneous-blue-angle.png"
+          alt=""
+        />
+        <h3>ANKET</h3>
+      </div>
+      <div class="navbar-links">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Skills</li>
+          <li>Education</li>
+          <li>Work</li>
+          <li>Experience</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </div>
+    <div class="landing-page-inner-content ani">
+      <div>
+        Hi There, <br />
+        <div class="landing-page-inner-content-name ">
+          I'm Sanket <span>Teli</span> <br />
+        </div>
+        <div class="content-animation">
+          I am into <span class="content-animation-span"></span>
+        </div>
+        <button class="about-me-button">About Me</button>
+      </div>
+      <div class="landing-page-image">
+        <img
+          src="https://img.freepik.com/premium-vector/young-good-looking-man-using-laptop-work_97632-4516.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div id="particles-js"></div>
+    <div class="about-me ani">
+      <div class="about-me-heading">
+        <h1>ABOUT</h1>
+        <h1 id="about-me-heading-me">ME</h1>
+      </div>
+      <div class="about-me-content">
+        <img
+          src="https://pbs.twimg.com/profile_images/1670143814743506944/yrKfJJLI_400x400.jpg"
+        />
+        <div id="about-me-bio">
+          <p>
+            <h3>I'm  Sanket</h3> <br>
+          Full Stack Developer | IIIT Nagpur
+          <br />
+          Mumbai, India | <a href="#">telisanket2002@gmail.com</a>
+          <br> </br>
+          Passionate full stack developer with a keen interest in Web3
+          <br />
+          Proficient in MERN stack, building web apps, and websites. <br />Excited
+          about the possibilities of Web3 and its potential to revolutionize
+          industries. <br />
+          Eager to explore decentralized applications, smart
+          contracts, and blockchain technology. <br>
+          Dedicated to continuous learning
+          and expanding my skills in the web3 space. Based in Mumbai, India.
+          <br> </br>
+          Feel free to reach out to me at <a href="#">telisanket2002@gmail.com</a>. Let's discuss the
+          exciting world of Web3!
+          </p>
+          <button id="resume-link-button">Resume</button>
+        </div>
+      
+      </div>
+      
+      
+    </div>
+    <div class="skills-and-abilities ani">
+      <h1>Skills and Abilities</h1>
+      <div class="skills-list ani">
+        <div class="skill ani">
+          <div class="skill-image">
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="Skill Image">
+          </div>
+          <div class="skill-content ani">
+            <h3>Web Development</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="skill ani">
+          <div class="skill-image">
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="Skill Image">
+          </div>
+          <div class="skill-content ani">
+            <h3>Graphic Design</h3>
+            <p>Nulla nec ante commodo, dapibus neque non, semper orci.</p>
+          </div>
+        </div>
+        <div class="skill ani">
+          <div class="skill-image ani">
+            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="Skill Image">
+          </div>
+          <div class="skill-content ani">
+            <h3>Database Management</h3>
+            <p>Sed bibendum tellus nec enim scelerisque, sit amet consectetur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="education">
+      <h1>education</h1>
+    </div>
+    <div class="work">
+      <h1>WORK</h1>
+    </div>
+    
+    <div class="experience">
+      <h1>experience</h1>
+    </div>
+    <div class="contact">
+      <h1>contact</h1>
+    </div>
+    
+
+    <script src="particles.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#000000",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 3,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#180b0b",
+            opacity: 0.5772283419115882,
+            width: 1.2827296486924182,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+              duration: 0.4,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+      });
+
+      const textAnimation = document.querySelector(".content-animation-span");
+      const skills = ["Web Development", "Web3 Development", "Cloud Computing"];
+      let skillIndex = 0;
+      let letterIndex = 0;
+
+      function loadNextLetter() {
+        const currentSkill = skills[skillIndex];
+        const currentLetters = currentSkill.slice(0, letterIndex + 1);
+        textAnimation.innerHTML = currentLetters + "|";
+
+        if (letterIndex === currentSkill.length - 1) {
+          // Finished loading current skill, move to the next one
+          skillIndex = (skillIndex + 1) % skills.length;
+          letterIndex = 0;
+        } else {
+          // Move to the next letter of the current skill
+          letterIndex++;
+        }
+      }
+
+      setInterval(loadNextLetter, 100); // Adjust the interval to control the speed of loading
+      const landingPageImage = document.querySelector(".landing-page-image");
+
+      landingPageImage.addEventListener("mousemove", (e) => {
+        const image = landingPageImage.querySelector("img");
+        const imageRect = image.getBoundingClientRect();
+
+        const imageCenterX = imageRect.left + imageRect.width / 2;
+        const imageCenterY = imageRect.top + imageRect.height / 2;
+
+        const rotateY = ((e.clientX - imageCenterX) / imageRect.width) * 20;
+        const rotateX = ((e.clientY - imageCenterY) / imageRect.height) * 20;
+
+        image.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
+      });
+
+      landingPageImage.addEventListener("mouseleave", () => {
+        const image = landingPageImage.querySelector("img");
+        image.style.transform = "";
+      });
+
+// Define the options for the Intersection Observer
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.4// Adjust this threshold as desired
+};
+
+// Create a new Intersection Observer instance
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('appear');
+    } else {
+      entry.target.classList.remove('appear');
+    }
+  });
+}, options);
+
+// Get all the sections you want to animate
+const sections = document.querySelectorAll('.ani');
+
+// Observe each section
+sections.forEach((section) => {
+  observer.observe(section);
+});
+
+
+
+
+  
+// Example dynamic skills loading
+const skills2 = [
+  { name: 'Web Development', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
+  { name: 'Graphic Design', description: 'Nulla nec ante commodo, dapibus neque non, semper orci.' },
+  { name: 'Database Management', description: 'Sed bibendum tellus nec enim scelerisque, sit amet consectetur.' }
+];
+
+const skillsList = document.querySelector('.skills-list');
+
+skills2.forEach(skill => {
+  const skillElement = document.createElement('div');
+  skillElement.classList.add('skill');
+
+  const iconElement = document.createElement('i');
+  iconElement.classList.add('fas', 'fa-code');
+
+  const headingElement = document.createElement('h3');
+  headingElement.textContent = skill.name;
+
+  const imageDiv = document.createElement('div');
+  imageDiv.classList.add('skill-image')
+  const image = document.createElement('img')
+ 
+  image.src = "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png";
+  imageDiv.classList.add('ani');
+  imageDiv.appendChild(image)
+
+  const descriptionElement = document.createElement('p');
+  descriptionElement.textContent = skill.description;
+
+  skillElement.appendChild(iconElement);
+  skillElement.appendChild(headingElement);
+  skillElement.appendChild(imageDiv);
+  skillElement.appendChild(descriptionElement);
+
+  skillsList.appendChild(skillElement);
+});
+
+
+    </script>
+  </body>
+</html>

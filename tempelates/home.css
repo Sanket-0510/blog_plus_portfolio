@@ -1,0 +1,273 @@
+.navbar {
+   display: flex;
+   flex-direction: row;
+   z-index: 1;
+   background-color: #ffffff; /* Add your desired background color */
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+ }
+ 
+ .navbar-logo img {
+   width: 2vw;
+   height: 2vw;
+   margin-top: 1vw;
+   border-radius: 100%;
+ }
+ 
+ .navbar-logo {
+   display: flex;
+   flex-direction: row;
+   margin-top: 0.5vw;
+   margin-left: 25vw;
+ }
+ 
+ .navbar-logo h3 {
+   margin-left: 0.3vw;
+   font-size: large;
+   font-weight: 1000;
+ }
+ 
+ .navbar-links ul {
+   display: flex;
+   flex-direction: row;
+   margin-top: 1.8vw;
+   list-style: none;
+   margin-left: 20vw;
+ }
+ 
+ .navbar-links li {
+   margin: 0 0.8vw;
+   display: inline-block;
+   position: relative;
+ }
+ 
+ .navbar-links li:before {
+   content: "";
+   position: absolute;
+   bottom: -2px;
+   left: 0;
+   width: 0;
+   height: 2px;
+   background-color: blue;
+   transition: width 0.5s ease-in-out;
+ }
+ 
+ .navbar-links li:hover:before {
+   width: 100%;
+ }
+ 
+ .navbar-links li:hover {
+   color: blue;
+   cursor: pointer;
+ }
+ 
+ body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+ 
+ #particles-js {
+   width: 100%;
+   height: 100%;
+   background-color: rgb(246, 248, 248);
+  
+ }
+ 
+.landing-page-inner-content{
+ 
+  position: absolute;
+  z-index: 1;
+  top: 23vh;
+  left: 10vw;
+  font-size: 5vw;
+  font-family:Bookman, URW Bookman L, serif;
+  font-weight: 800;
+  color: rgb(4, 4, 119);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 0;
+}
+.landing-page-inner-content-name {
+ margin-top: 1vw;
+  
+}
+
+.landing-page-inner-content-name span{
+  color: rgb(216, 147, 19);
+}
+.content-animation-span{
+  font-size: 2vw;
+  color: rgb(251, 139, 47);
+}
+.content-animation{
+  font-size: 3vw;
+ 
+}
+.about-me-button{
+  background-color: rgb(23, 23, 244);
+  width: 9vw;
+  height: 3vw;
+  border-radius: 1vw;
+  color: aliceblue;
+  font-size: 1vw;
+  font-weight: 1000;
+  border-color: #4e37ff;
+  border-width: 0.3vw;
+}
+.landing-page-image{
+  position: absolute;
+  left: 15vw;
+}
+.landing-page-image {
+  position: relative;
+  perspective: 1000px;
+  width: 35vw;
+  
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.landing-page-image img {
+  width: 100%;
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.landing-page-image:hover img {
+  transform: rotateY(30deg) rotateX(-30deg);
+}
+.about-me{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 5vh;
+  width: 80vw;
+  z-index: 0;
+}
+.about-me-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+.about-me-content img{
+  width: 18vw;
+  padding: 4vw;
+  border-radius: 20%;
+  margin-left: 8vw;
+  margin-right: 2vw;
+}
+#about-me-bio{
+  padding: 2vw;
+  font-family:Bookman, URW Bookman L, serif;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.3vw;
+}
+#about-me-bio h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#about-me-bio a{
+  text-decoration: none;
+  color: #4e37ff;
+}
+.about-me-heading{
+  color:rgb(4, 4, 119);
+  display: flex;
+  
+}
+#about-me-heading-me{
+  color: rgb(167, 110, 3);
+  margin-left: 1vw;
+}
+#resume-link-button{
+  color: #ffffff;
+  background-color: rgb(23, 23, 244);
+  width: 8vw;
+  height: 5vh;
+  font-weight: 900;
+  border-color: #4e37ff;
+  border-width: 0.3vw;
+  border-radius: 1vw;
+  margin-top: 1vw;
+  font-weight: 1000;
+}
+.ani {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.ani.appear {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.skills-and-abilities {
+  position: relative;
+  top: 3vh;
+  padding: 50px;
+  text-align: center;
+  background-color: #ffffff;
+  width: 80%;
+  border-radius: 2%;
+}
+
+.skills-and-abilities h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  
+
+}
+
+.skill {
+  flex: 0 0 calc(33.33% - 40px); /* Adjust the width as needed */
+  padding: 20px;
+  background-color: rgb(4, 4, 119);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .skill {
+    flex: 0 0 calc(50% - 40px); /* Adjust the width as needed */
+  }
+}
+
+
+.skill i {
+  font-size: 48px;
+  color: #eeca4b;
+}
+
+.skill h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #919107;
+}
+
+.skill p {
+  color: #919107;
+}
