@@ -48,13 +48,15 @@ app.post('/upload', upload.single('coverImage'), async (req, res) => {
       const { data, error } = await supabase
         .from('blogs')
         .insert([
-          { title: title, blog_content: content, blog_cover: coverImageBase64 }
+          { title: title, blog_content: content, cover_image: coverImageBase64 }
         ]);
-  
+       
       if (error) {
+
         console.error('Error storing blog:', error);
         res.status(500).send('Error uploading blog.');
       } else {
+        console.log(data)
         console.log('Blog stored with ID:', data);
         res.send('Blog uploaded successfully!');
       }
@@ -71,7 +73,7 @@ app.post('/upload', upload.single('coverImage'), async (req, res) => {
       // Retrieve the blog entry from the 'blogs' table
       const { data, error } = await supabase
         .from('blogs')
-        .select('blog_cover')
+        .select('cover_image')
         .eq('id', id)
         .single();
   
