@@ -1,15 +1,11 @@
+const awsServerlessExpress = require('aws-serverless-express');
 const express = require('express');
 const app = express();
 const path = require('path');
 require('dotenv').config();
-const fs = require('fs')
+const fs = require('fs');
 const multer = require('multer');
 const { createClient } = require('@supabase/supabase-js');
-const supabaseUrl = 'https://kfvxugorgcmsjslpxnvd.supabase.co';
-const supabaseKey = process.env.API_KEY;
-const supabase = createClient(supabaseUrl, supabaseKey);
-app.use(express.static('images'));
-
 //adding  particles.js
 
 
@@ -93,3 +89,10 @@ app.post('/upload', upload.single('coverImage'), async (req, res) => {
       res.status(500).send('Error retrieving blog.');
     }
   });
+
+const server = awsServerlessExpress.createServer(app);
+
+// Export the Lambda handler function
+exports.handler = (event, context) => {
+  awsServerlessExpress.proxy(server, event, context);
+};

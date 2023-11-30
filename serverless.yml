@@ -1,0 +1,47 @@
+service: personal-blog-website
+app: test
+org: sanketteli
+
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: ap-south-1
+
+# Uncomment this section and define IAM role permissions if needed
+# iam:
+#   role:
+#     statements:
+#       - Effect: "Allow"
+#         Action:
+#           - "s3:ListBucket"
+#         Resource: "arn:aws:s3:::${env:BUCKET}"
+#       - Effect: "Allow"
+#         Action:
+#           - "s3:PutObject"
+#         Resource: "arn:aws:s3:::${env:BUCKET}/*"
+
+functions:
+  hello:
+    handler: index.handler
+    events:
+      - httpApi:
+          path: /
+          method: get
+
+# Uncomment this section to define function environment variables
+# environment:
+#   variable2: value2
+
+# Uncomment this section to add CloudFormation resource templates
+# resources:
+#   Resources:
+#     NewResource:
+#       Type: AWS::S3::Bucket
+#       Properties:
+#         BucketName: my-new-bucket
+#   Outputs:
+#     NewOutput:
+#       Description: "Description for the output"
+#       Value: "Some output value"
